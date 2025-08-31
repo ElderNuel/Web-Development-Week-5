@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Fundamentals Assignment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>JavaScript Fundamentals Assignment</h1>
+            <p>Explore JavaScript basics, functions, loops, and DOM manipulation through interactive examples</p>
+        </header>
+        
+        <h2>🎯 Part 1: JavaScript Basics</h2>
+        <div class="grid">
+            <div class="card">
+                <h3><span>🔢</span> Number Operations</h3>
+                <p>Enter two numbers to perform arithmetic operations:</p>
+                <input type="number" id="num1" placeholder="Enter first number">
+                <input type="number" id="num2" placeholder="Enter second number">
+                <button onclick="performOperations()">Calculate</button>
+                <div class="output" id="operationOutput"></div>
+            </div>
+            
+            <div class="card">
+                <h3><span>🔍</span> Conditional Check</h3>
+                <p>Enter your age to check eligibility:</p>
+                <input type="number" id="ageInput" placeholder="Enter your age">
+                <button onclick="checkEligibility()">Check Eligibility</button>
+                <div class="output" id="eligibilityOutput"></div>
+            </div>
+        </div>
+        
+        <h2>❤️ Part 2: JavaScript Functions</h2>
+        <div class="grid">
+            <div class="card">
+                <h3><span>🧮</span> Calculate Circle Properties</h3>
+                <p>Enter radius to calculate area and circumference:</p>
+                <input type="number" id="radiusInput" placeholder="Enter radius">
+                <button onclick="calculateCircle()">Calculate</button>
+                <div class="output" id="circleOutput"></div>
+            </div>
+            
+            <div class="card">
+                <h3><span>📝</span> String Formatter</h3>
+                <p>Enter text to format it:</p>
+                <input type="text" id="textInput" placeholder="Enter text">
+                <button onclick="formatText()">Format Text</button>
+                <div class="output" id="textOutput"></div>
+            </div>
+        </div>
+        
+        <h2>🔁 Part 3: JavaScript Loops</h2>
+        <div class="grid">
+            <div class="card">
+                <h3><span>🔄</span> Multiplication Table</h3>
+                <p>Enter a number to generate its multiplication table:</p>
+                <input type="number" id="multiplicationInput" placeholder="Enter a number">
+                <button onclick="generateMultiplicationTable()">Generate Table</button>
+                <div class="output" id="multiplicationOutput"></div>
+            </div>
+            
+            <div class="card">
+                <h3><span>⏱️</span> Countdown Timer</h3>
+                <p>Enter seconds to start countdown:</p>
+                <input type="number" id="countdownInput" placeholder="Enter seconds">
+                <button onclick="startCountdown()">Start Countdown</button>
+                <div class="output" id="countdownOutput"></div>
+            </div>
+        </div>
+        
+        <h2>🌐 Part 4: DOM Manipulation</h2>
+        <div class="grid">
+            <div class="card">
+                <h3><span>🎨</span> Style Changer</h3>
+                <p>Click buttons to change the box style:</p>
+                <div class="dom-container">
+                    <div class="box" id="styleBox">Box</div>
+                </div>
+                <button onclick="changeColor()">Change Color</button>
+                <button onclick="toggleVisibility()">Toggle Visibility</button>
+                <button onclick="resetStyle()">Reset Style</button>
+            </div>
+            
+            <div class="card">
+                <h3><span>📋</span> Dynamic List</h3>
+                <p>Add items to the list:</p>
+                <input type="text" id="listItemInput" placeholder="Enter item">
+                <button onclick="addListItem()">Add Item</button>
+                <div class="output">
+                    <ul class="item-list" id="dynamicList"></ul>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h3><span>💡</span> Content Toggler</h3>
+                <p>Toggle content visibility:</p>
+                <button onclick="toggleContent()">Toggle Secret Message</button>
+                <div class="output" id="secretMessage" style="display: none;">
+                    <p>Congratulations! You've mastered JavaScript DOM manipulation! 🎉</p>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>Emmanuel Ukah &copy; 2025</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
